@@ -1,0 +1,20 @@
+{% extends "../base_ex.html" %}
+{% load i18n %}
+
+{% block title %}{% translate "Новая запись блога" %}{% endblock %}
+
+{% block content %}
+
+<h1>{% translate "Новая запись блога" %}</h1>
+
+<b>{% trans "Автор" %}: </b> {% firstof user.get_full_name user.username %}
+<form method="post" action=".">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <a href="{% url 'main' %}"><input type="button" value="{% trans 'Отмена' %}"></a>
+    <button type="submit" name="next_url" value="edit">{% trans "Сохранить и добавить фото" %}</button>
+    <input type="submit" value="{% trans 'Сохранить' %}">
+</form>
+
+{% endblock content %}

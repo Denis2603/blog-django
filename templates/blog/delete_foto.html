@@ -1,0 +1,25 @@
+{% extends "../base_ex.html" %}
+
+{% load i18n %}
+
+
+{% block title %}{% trans "Удалить фото" %}{% endblock %}
+
+{% block content %}
+
+<h1>{% trans "Удалить фото" %}?</h1>
+
+<form method="post" action=".">
+    {% csrf_token %}
+    <figure class="picture">
+    <img src="{{ blogfoto.foto.url }}" height="200">
+    {% trans "Подписи нет" as decr %}
+    <figcaption>{% firstof blogfoto.description descr %}</figcaption>
+    </figure>
+
+    {{ form.as_p }}
+    <input type="submit" value="{% trans 'Удалить' %}">
+    <a href="{% url 'edit_blog' blogfoto.blog.id %}"><input type="button" value="{% trans 'Отмена' %}"></a>
+
+</form>
+{% endblock content %}

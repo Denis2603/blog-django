@@ -1,0 +1,31 @@
+{% extends "../base_ex.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Редактировать запись блога" %}{% endblock %}
+
+{% block content %}
+
+<h1>{% trans "Редактировать запись блога" %}</h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    {% for item in fotos %}
+        <figure class="picture">
+        <img src="{{ item.foto.url }}" height="200">
+        <figcaption>
+            {% trans 'Подписи нет' as desc %}
+            {% firstof item.description desc %}<br>
+            <a href="{% url 'edit_foto' item.id %}">{% trans "Изменить подпись" %}</a><br>
+            <a href="{% url 'delete_foto' item.id %}">{% trans "Удалить фото" %}</a>
+        </figcaption>
+        </figure>
+    {% endfor %}
+
+    {{ foto_form.as_p }}
+    <input type="submit" value="{% trans 'Сохранить' %}">
+    <a href="{% url 'detail_blog' blog.id %}"><input type="button" value="{% trans 'Отмена' %}"></a>
+
+</form>
+{% endblock content %}

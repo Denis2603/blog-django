@@ -1,0 +1,34 @@
+{% extends "../base_ex.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Загрузить несколько записей" %}{% endblock %}
+
+{% block content %}
+
+{% if message %}
+    <h2>{{ message }}</h2>
+    <a href="{% url 'main' %}">{% trans "На главную" %}</a>
+{% else %}
+
+    <h1>{% trans "Загрузить несколько записей блога" %}</h1>
+
+
+    <b>{% trans "Автор" %}: </b> {% firstof user.get_full_name user.username %}
+
+    <form method="post" action="." enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+    <ul>
+        <li>{% trans "Файл должен быть формата CSV" %}</li>
+        <li>{% trans "Должен содержать две колонки" %}</li>
+        <li>{% trans "В первой колонке дата в формате гггг-мм-дд" %}</li>
+        <li>{% trans "Во второй текст записи" %}</li>
+    </ul>
+
+        <a href="{% url 'main' %}"><input type="button" value="{% trans 'Отмена' %}"></a>
+        <input type="submit" value="{% trans 'Сохранить' %}">
+    </form>
+
+{% endif %}
+{% endblock content %}

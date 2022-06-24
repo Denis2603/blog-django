@@ -1,0 +1,13 @@
+{% extends "../base_ex.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Вход в систему" %}{% endblock %}
+
+{% block content %}
+<h2>{% trans "Введите логин и пароль в форму" %}:</h2>
+<form action="." method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="{% trans 'Отправить' %}">
+</form>
+{% endblock content %}

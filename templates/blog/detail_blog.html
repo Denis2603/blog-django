@@ -1,0 +1,33 @@
+{% extends "../base_ex.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Запись от" %} {{ blog.created }}{% endblock %}
+
+{% block content %}
+
+<h1>{% trans "Запись блога" %}</h1>
+{% if user == blog.user %}
+<b>{% trans "Вы автор записи. Можете" %} <a href="{% url 'edit_blog' blog.id %}">{% trans "изменить её." %}</a></b>
+{% endif %}
+
+
+<div class="avatar">
+<img src="{{ blog.user.profile.ava.url }}">
+    <h4>{% trans "Автор" %}: </h4>
+    {% firstof blog.user.get_full_name blog.user.username %}
+    <h4>{% trans "Об авторе" %}:</h4>
+    <i>{{ blog.user.profile.about}}</i>
+</div>
+
+<b>{% trans "Запись от" %} {{ blog.created }} </b>
+<p>{{ blog.text }}</p>
+
+{% for item in blog.foto.all %}
+<figure class="picture">
+<img src="{{ item.foto.url }}" height="200">
+<figcaption>{{ item.description }}</figcaption>
+</figure>
+{% endfor %}
+
+
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <title>{% block title %}{% endblock title%}</title>
+</head>
+
+<body>
+
+  <div class="container">
+    {% block header %}
+    {% endblock header %}
+    
+    {% block menu %}
+    {% endblock menu %}
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block footer %}
+    {% endblock footer%}
+
+  </div>
+</body>
+
+</html>

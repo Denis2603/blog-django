@@ -1,0 +1,1 @@
+[{"model": "users.profile", "pk": 1, "fields": {"user": 2, "about": "Автор блога о путешествиях.", "ava": "users/foto/111.png"}}, {"model": "users.profile", "pk": 5, "fields": {"user": 7, "about": "Автор кулинарного блога.", "ava": "users/foto/222.jpeg"}}]

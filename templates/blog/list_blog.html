@@ -1,0 +1,18 @@
+{% extends "../base_ex.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Все записи блога" %}{% endblock %}
+
+{% block content %}
+
+<h1>{% trans "Все записи блога" %}</h1>
+
+{% for blog in blog_list %}
+<p class="blog_list">
+    <img class="list_avatar" src="{{ blog.user.profile.ava.url }}" height="30">
+    <b>{% firstof blog.user.get_full_name blog.user.username %}</b> {% trans "написал" %} {{ blog.created }}:
+    <a href="{% url 'detail_blog' blog.id %}">{{ blog.text|slice:":100" }}...</a>
+</p>
+{% endfor %}
+
+{% endblock content %}

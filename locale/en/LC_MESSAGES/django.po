@@ -1,0 +1,292 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-15 19:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: blog/admin.py:16 blog/admin.py:38
+msgid "Просмотр"
+msgstr "Viewing"
+
+#: blog/apps.py:8
+msgid "Блог"
+msgstr "Blog"
+
+#: blog/forms.py:8
+msgid "Загрузить фото"
+msgstr "Upload photo"
+
+#: blog/forms.py:14
+msgid "Загрузить файл"
+msgstr "Upload file"
+
+#: blog/forms.py:15
+msgid "Выберите файл .csv"
+msgstr "Select the .csv file"
+
+#: blog/models.py:14 blog/models.py:25 templates/blog/create_blog.html:10
+#: templates/blog/detail_blog.html:16 templates/blog/upload_csv.html:16
+msgid "Автор"
+msgstr "Author"
+
+#: blog/models.py:15
+msgid "Дата записи"
+msgstr "Date of entries"
+
+#: blog/models.py:16
+msgid "Текст записи"
+msgstr "Text of entry"
+
+#: blog/models.py:20 templates/blog/detail_blog.html:8
+msgid "Запись блога"
+msgstr "Blog entry"
+
+#: blog/models.py:21
+msgid "Записи блога"
+msgstr "Blog Entries"
+
+#: blog/models.py:34
+msgid "Фотография"
+msgstr "Photo"
+
+#: blog/models.py:35
+msgid "Подпись"
+msgstr "Description"
+
+#: blog/models.py:38
+msgid "фотография"
+msgstr "photo"
+
+#: blog/models.py:39
+msgid "фотографии"
+msgstr "photo"
+
+#: blog/models.py:42
+#, python-format
+msgid "Фото %(name)s из записи %(blog)s"
+msgstr "Photo %(name)s from entry %(blog)s"
+
+#: blog/views.py:135
+#, python-format
+msgid "Успешно! Количество добавленных записей: %(n)d"
+msgstr "Successfully! Number of records added: %(n)d"
+
+#: blog/views.py:138
+msgid "Неизвестная кодировка файла. Используйте UTF-8 или Windows-1251"
+msgstr "Unknown file encoding. Use UTF-8 or Windows-1251"
+
+#: blog/views.py:141
+msgid "Файл не csv"
+msgstr "File should be in csv format"
+
+#: templates/base_ex.html:6
+msgid "Журнал-блог"
+msgstr "Journal-Blog"
+
+#: templates/base_ex.html:28
+msgid "Войти"
+msgstr "LogIn"
+
+#: templates/base_ex.html:29
+msgid "Зарегистрироваться"
+msgstr "SignUp"
+
+#: templates/base_ex.html:32
+msgid "Выйти"
+msgstr "LogOut"
+
+#: templates/base_ex.html:40
+msgid "Все записи"
+msgstr "All entries"
+
+#: templates/base_ex.html:43
+msgid "Новая запись"
+msgstr "New entry"
+
+#: templates/base_ex.html:44
+msgid "Загрузить записи"
+msgstr "Upload Records"
+
+#: templates/base_ex.html:54
+msgid "ДЗ 11. Локализация и интернационализация. Желтиков Д.А."
+msgstr "HW 11. Localization and internationalization. Zheltikov D.A."
+
+#: templates/blog/create_blog.html:4 templates/blog/create_blog.html:8
+msgid "Новая запись блога"
+msgstr "New blog entry"
+
+#: templates/blog/create_blog.html:15 templates/blog/delete_foto.html:22
+#: templates/blog/edit_blog.html:28 templates/blog/edit_foto.html:21
+#: templates/blog/upload_csv.html:29
+msgid "Отмена"
+msgstr "Cancel"
+
+#: templates/blog/create_blog.html:16
+msgid "Сохранить и добавить фото"
+msgstr "Save and add photos"
+
+#: templates/blog/create_blog.html:17 templates/blog/edit_blog.html:27
+#: templates/blog/edit_foto.html:20 templates/blog/upload_csv.html:30
+#: templates/users/profile.html:23
+msgid "Сохранить"
+msgstr "Save"
+
+#: templates/blog/delete_foto.html:6 templates/blog/delete_foto.html:10
+#: templates/blog/edit_blog.html:21
+msgid "Удалить фото"
+msgstr "Delete photo"
+
+#: templates/blog/delete_foto.html:16 templates/blog/edit_blog.html:18
+#: templates/blog/edit_foto.html:15
+msgid "Подписи нет"
+msgstr "No description"
+
+#: templates/blog/delete_foto.html:21
+msgid "Удалить"
+msgstr "Delete"
+
+#: templates/blog/detail_blog.html:4 templates/blog/detail_blog.html:22
+msgid "Запись от"
+msgstr "Entry for"
+
+#: templates/blog/detail_blog.html:10
+msgid "Вы автор записи. Можете"
+msgstr "You are the author of the recording. You can"
+
+#: templates/blog/detail_blog.html:10
+msgid "изменить её."
+msgstr "change it."
+
+#: templates/blog/detail_blog.html:18
+msgid "Об авторе"
+msgstr "About the author"
+
+#: templates/blog/edit_blog.html:4 templates/blog/edit_blog.html:8
+msgid "Редактировать запись блога"
+msgstr "Edit a blog entry"
+
+#: templates/blog/edit_blog.html:20
+msgid "Изменить подпись"
+msgstr "Change the description"
+
+#: templates/blog/edit_foto.html:4 templates/blog/edit_foto.html:8
+msgid "Изменить подпись фото"
+msgstr "Change photo caption"
+
+#: templates/blog/list_blog.html:4 templates/blog/list_blog.html:8
+msgid "Все записи блога"
+msgstr "All blog entries"
+
+#: templates/blog/list_blog.html:13
+msgid "написал"
+msgstr "wrote"
+
+#: templates/blog/upload_csv.html:4
+msgid "Загрузить несколько записей"
+msgstr "Upload multiple entries"
+
+#: templates/blog/upload_csv.html:10 templates/users/profile.html:25
+msgid "На главную"
+msgstr "To the main page"
+
+#: templates/blog/upload_csv.html:13
+msgid "Загрузить несколько записей блога"
+msgstr "Upload multiple blog entries"
+
+#: templates/blog/upload_csv.html:23
+msgid "Файл должен быть формата CSV"
+msgstr "The file must be in CSV format"
+
+#: templates/blog/upload_csv.html:24
+msgid "Должен содержать две колонки"
+msgstr "Must contain two columns"
+
+#: templates/blog/upload_csv.html:25
+msgid "В первой колонке дата в формате гггг-мм-дд"
+msgstr "In the first column, the date in the format yyyy-mm-dd"
+
+#: templates/blog/upload_csv.html:26
+msgid "Во второй текст записи"
+msgstr "In the second text of the entry"
+
+#: templates/users/login.html:4
+msgid "Вход в систему"
+msgstr "Log in to the system"
+
+#: templates/users/login.html:7
+msgid "Введите логин и пароль в форму"
+msgstr "Enter your username and password in the form"
+
+#: templates/users/login.html:11 templates/users/registration.html:11
+msgid "Отправить"
+msgstr "Send"
+
+#: templates/users/profile.html:4 templates/users/profile.html:7
+msgid "Профиль пользователя"
+msgstr "User Profile"
+
+#: templates/users/profile.html:17
+msgid "Чтобы сменить изображение"
+msgstr "To change the image"
+
+#: templates/users/profile.html:24
+msgid "Сбросить изменения"
+msgstr "Reset Changes"
+
+#: templates/users/registration.html:4
+msgid "Регистрация пользователя"
+msgstr "User Registration"
+
+#: templates/users/registration.html:7
+msgid "Регистрация нового пользователя"
+msgstr "Registering a new user"
+
+#: users/admin.py:19
+msgid "Просмотр фото"
+msgstr "Viewing photos"
+
+#: users/admin.py:33
+msgid "Полное имя"
+msgstr "Full name"
+
+#: users/admin.py:34
+msgid "Записей в блоге"
+msgstr "Blog Entries"
+
+#: users/apps.py:8
+msgid "Пользователи"
+msgstr "Users"
+
+#: users/models.py:19
+msgid "Пользователь"
+msgstr "User"
+
+#: users/models.py:20
+msgid "О себе"
+msgstr "About me"
+
+#: users/models.py:22
+msgid "Фото"
+msgstr "Photo"
+
+#: users/views.py:45
+msgid "Изменения успешно внесены."
+msgstr "The changes have been successfully made."
+
+#: users/views.py:47
+msgid "Ошибка, проверьте введенные данные!"
+msgstr "Error, check the entered data!"
