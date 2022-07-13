@@ -122,9 +122,9 @@ msgid "Загрузить записи"
 msgstr "Einträge laden"
 
 #: templates/base_ex.html:54
-msgid "ДЗ 11. Локализация и интернационализация. Желтиков Д.А."
+msgid "Проект сайта журнал-блог. Желтиков Д.А."
 msgstr ""
-"Hausaufgabe 11. Lokalisierung und Internationalisierung. Zheltikov D.A."
+"Das Projekt der Webseite das Journal-Blog. Zheltikov D.A."
 
 #: templates/blog/create_blog.html:4 templates/blog/create_blog.html:8
 msgid "Новая запись блога"

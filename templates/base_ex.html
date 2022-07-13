@@ -3,7 +3,7 @@
 
 {% block header %}
 <div class="header">
-    <span>{% trans "Журнал-блог" %}</span>
+    <span><a href="{% url 'main' %}">{% trans "Журнал-блог" %}</a></span>
 
     <span class="header_language_menu">
         <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
@@ -51,7 +51,7 @@
 {% block footer %}
 <div class="footer">
     <hr>
-    <p>{% trans "ДЗ 11. Локализация и интернационализация. Желтиков Д.А." %}</p>
+    <p>{% trans "Проект сайта журнал-блог. Желтиков Д.А." %}</p>
 </div>
 
 {% get_current_language as LANGUAGE_CODE %}

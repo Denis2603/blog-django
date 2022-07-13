@@ -122,8 +122,8 @@ msgid "Загрузить записи"
 msgstr "Upload Records"
 
 #: templates/base_ex.html:54
-msgid "ДЗ 11. Локализация и интернационализация. Желтиков Д.А."
-msgstr "HW 11. Localization and internationalization. Zheltikov D.A."
+msgid "Проект сайта журнал-блог. Желтиков Д.А."
+msgstr "The project of the website Journal-blog. Zheltikov D.A."
 
 #: templates/blog/create_blog.html:4 templates/blog/create_blog.html:8
 msgid "Новая запись блога"
